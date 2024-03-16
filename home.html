@@ -1,0 +1,102 @@
+<!--
+This file contains html for the home page.
+A page give viewers a way to navigate to the many other pages along with highlights such as news or new games
+
+3/13/2024
+Noah George
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foxin Gaming: Home</title>
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--Style Sheet links-->
+<link rel="stylesheet" href="css/template.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/start_font.css">
+<!---->
+
+<!--overriding code to style sheets-->
+<style>
+
+</style>
+</head>
+
+
+<body>
+
+    <!-- top Navigation bar-->
+    <div class="topnav text">
+        <img class="logo" src="images/Foxin Logo 2.png" alt="Foxin Gaming">
+            <div>
+                <a class="active" href="home.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="#contact">Contact</a>
+                <a href="devlog.html">Dev log</a>
+                <a href="about.html">About</a>
+            </div>
+    </div>
+
+    <div style="box-sizing:border-box; background-color: #111; height: 500px; width: 100%;"></div>
+
+    <!--Menu element-->
+    <div class="center " style="box-sizing: initial; height: 90%; width: auto; padding: 0; ">
+        <div class="nav" style="align-items: center;">
+            <ul class="menu">
+                <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
+                    <li style="--i:1;--clr:#ffa500;">
+                        <a href=""><ion-icon name="build"></ion-icon></ion-icon></a>
+                    </li>
+                    <li style="--i:2;--clr:#ffa500;">
+                        <a href=""><ion-icon name="person-circle-outline"></ion-icon></ion-icon></a>
+                    </li>
+                    <li style="--i:3;--clr:#ffa500;">
+                        <a href=""><ion-icon name="settings-outline"></ion-icon></a>
+                    </li>
+                    <li style="--i:4;--clr:#ffa500;">
+                        <a href="games.html"><ion-icon name="game-controller-outline"></ion-icon></a>
+                    </li>
+                    <li style="--i:5;--clr:#ffa500;">
+                        <a href=""><ion-icon name="code-outline"></ion-icon></a>
+                    </li>
+                    <li style="--i:6;--clr:#ffa500;">
+                        <a href=""><ion-icon name="extension-puzzle-outline"></ion-icon></ion-icon></a>
+                    </li>
+                    <li style="--i:7;--clr:#ffa500;">
+                        <a href=""><ion-icon name="alert-outline"></ion-icon></a>
+                    </li>
+                    <li style="--i:8;--clr:#ffa500;">
+                        <a href="devlog.html" class="tooltip"><ion-icon name="document-text-outline"></ion-icon></a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- grabs script to use icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Javascript for menu element-->
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let menu =  document.querySelector('.menu');
+        menuToggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+
+
+
+
+
+<div>
+    <p class="your_device"></p>
+</div>
+
+</body>
+</html>

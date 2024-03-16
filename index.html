@@ -1,0 +1,114 @@
+<!--
+This file contains html welcome page or first page a viewer should see.
+just welcomes guests to the website
+
+3/13/2024
+Noah George
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Foxin Gaming</title>
+
+    <!--links to fonts and other elements for background-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Style Sheet links-->
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/start_font.css">
+    
+    <!--overriding code to style sheets-->
+<style>
+
+</style>
+</head>
+<body>
+
+    <!--Login area-->
+    <div  class="center anton-regular title main_logo">
+
+            <img class="logo" src="images/Foxin Logo 2.png" style="width: 60vw; height: auto;">
+
+        <div>
+            <a href="home.html"> 
+                <button><p>Get Started</p></button>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Background -->
+    <div class="box">
+        <div class="group"></div>
+    </div>
+
+    
+
+    <!--Script for background-->
+    <script>
+        
+
+        const group = document.querySelector('.group');
+        for(let i = 1; i < 50; i++){
+            const containerId = `iconContainer${i}`;
+            const container = document.createElement('div');
+            container.className = 'iconContainer';
+            container.id = containerId;
+            group.appendChild(container);
+            addIcons(containerId)
+        }
+
+        function addIcons(containerId){
+            const iconContainer = document.getElementById(containerId);
+            const Unicode = [
+                '\uf11b',
+                '\uf1eb',
+                '\uf1e2',
+                '\uf008',
+                '\uf135',
+                '\uf011',
+                '\uf390',
+                '\uf109',
+                '\uf544',
+                '\uf091',
+                '\uf11c',
+                '\uf3fb',
+                '\uf590',
+                '\uf26c',
+                '\uf54c',
+                '\uf7c2',
+                '\uf5fc',
+                '\uf58f',
+                '\ue4e9',
+                '\ue4e5',
+
+
+            ];
+
+            for (let i = 0; i < 100; i++){
+                const icon = document.createElement('i');
+                icon.className = 'icon fas';
+                icon.innerHTML = randomIcon(Unicode);
+                iconContainer.appendChild(icon);
+            }
+        }
+
+        // function to generate a randome unicode value
+
+        function randomIcon(values){
+            const randomIndex = Math.floor(Math.random() * values.length);
+            return values[randomIndex];
+        }
+
+    </script>
+
+
+
+</body>
+</html>

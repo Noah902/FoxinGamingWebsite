@@ -1,0 +1,128 @@
+/*
+This file contains the css for the general layout for most pages
+
+3/13/2024
+Noah George
+
+*/
+
+/*Page Rules*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    font-family: "Anton", sans-serif;
+  }
+
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 100000;
+  }
+  
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    border: orange;
+  }
+  
+  .topnav a:hover {
+    transition: 1s;
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: orange;
+    color: white;
+  }
+
+/* Logo */
+
+
+.logo
+{
+    width: 60%; 
+    height: auto;
+}
+
+
+
+
+/* Device info */
+
+.your_device::before
+{
+    content: "your device is phone";
+    font-size: 20pt;
+    color:white;
+}
+
+
+/*device detecting*/
+
+/*Phones*/
+  @media (max-width: 800px)
+{
+
+}
+
+/*Desktop*/
+/**/
+@media (min-width: 1080px)
+{
+  .topnav a {
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+  
+  
+  .logo
+  {
+      width: 60vh; 
+      padding: 10px;
+  }
+
+  .your_device::before
+  {
+      content: "your device is default";
+  
+  }
+
+}
+
+/*desktop widescreen*/
+@media (min-width: 2000px)
+{
+  .topnav a {
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+
+  .logo
+  {
+      width: 70vh; 
+      padding: 20px;
+  }
+
+  .ur_device::before
+  {
+      content: "your device a wide screen";
+  
+  }
+  
+}

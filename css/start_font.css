@@ -1,0 +1,80 @@
+/*
+This file contains the css for Fonts/index logo/and content centering.
+
+3/13/2024
+Noah George
+
+*/
+.center
+{
+    z-index: 10;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%)
+  }
+
+.title
+  {
+    font-size: 150%;
+  }
+
+  .anton-regular
+   {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.title img {
+    width: fit-content;
+    height: auto;
+    margin: none;
+}
+
+.main_logo
+{
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  border: solid 10px orange;
+}
+
+/*device detecting*/
+
+/*Phones*/
+@media (min-width: 800px)
+{
+  
+}
+
+/*Desktop*/
+@media (min-width: 1080px)
+{
+
+  .center
+  {
+      top: 50%;
+      left: 50%;
+    }
+
+}
+
+/*Large Desktop*/
+@media (min-width: 2000px)
+{
+
+  .center
+  {
+      top: 50%;
+      left: 50%;
+    }
+
+}
+
+
+

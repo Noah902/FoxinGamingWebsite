@@ -1,0 +1,48 @@
+button
+{
+    background-color: black;
+    color:white;
+    border-radius: 1vw; 
+    padding: 2%; 
+    padding-left: 25%; 
+    padding-right: 25%; 
+    font-family: Anton, sans-serif; 
+    font-size: 2vw; 
+    border: none;
+    transition: 1s;
+}
+
+button:hover
+{
+    background-color: rgb(255, 155, 6);
+    transition: 1s;
+    -webkit-text-stroke: 1px transparent;
+    opacity: 1;
+    box-shadow: 0 0 50px rgb(255, 155, 6);
+}
+
+button p
+{   
+    color: white;
+}
+
+button:hover p
+{
+    color:black;
+    transition: 1s;
+}
+
+@media (max-width: 800px)
+{
+
+    button:hover
+    {
+        background-color: rgb(255, 155, 6);
+        transition: 0s;
+        -webkit-text-stroke: 1px transparent;
+        opacity: 1;
+        box-shadow: 0 0 50px rgb(255, 155, 6);
+    }
+  
+
+}
