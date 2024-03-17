@@ -17,6 +17,18 @@ Noah George
     transform: translate(-50%, -50%)
   }
 
+.center_button
+{
+    z-index: 10;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%)
+  }
+
 .title
   {
     font-size: 150%;

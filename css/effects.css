@@ -106,12 +106,6 @@ body
 @media (max-width: 800px)
 {
 
-    .iconContainer
-{
-    display: flex;
-    gap: 0.2em;
-    font-size: 5em;
-    
-}
+
 
 }

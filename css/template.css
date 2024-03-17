@@ -27,7 +27,8 @@ body {
   .topnav {
     overflow: hidden;
     background-color: #333;
-    z-index: 100000;
+    z-index: 999;
+    position: relative;
   }
   
   .topnav a {
@@ -51,20 +52,17 @@ body {
     color: white;
   }
 
+
 /* Logo */
-
-
 .logo
 {
     width: 60%; 
     height: auto;
+    padding: 1vw;
 }
 
 
-
-
 /* Device info */
-
 .your_device::before
 {
     content: "your device is phone";
@@ -95,6 +93,7 @@ body {
   {
       width: 60vh; 
       padding: 10px;
+      
   }
 
   .your_device::before

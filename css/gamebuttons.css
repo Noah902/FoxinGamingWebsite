@@ -1,0 +1,17 @@
+.gamebutton{
+    text-decoration: none;
+    color: black;
+    font-size: 8vw;
+}
+
+
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+border-radius: 20px;
+margin: 20px;
+}
+
