@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.game_body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: none;
+    min-height: 40vh;
+    flex-direction: column;
+    gap: 3vw; 
+    
+}
+
+
+
+
+.game_button
+{
+    position: relative;
+    background: #fff;
+    color: rgb(255, 206, 115);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400vh;
+    padding: 10vh 10vh;
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 15px;
+
+
+    white-space: nowrap;
+
+
+}
+
+.game_body a:hover
+{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    box-shadow:  0 0 35px var(--clr);
+}
+
+section
+{
+    width: 80%;
+    /* display: inlineblock; */ /* remove this */
+    margin:auto;
+}
+
+a::before
+{
+    z-index: -8;
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #333;
+    border-radius: 10px;
+}
+
+a span{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+@media (min-width: 1080px)
+{
+    .game_body
+{
+
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: none;
+    min-height: 40vh;
+    gap: 3vw; 
+    flex-grow: 1;
+
+    flex-wrap: flex;
+    
+}
+
+}

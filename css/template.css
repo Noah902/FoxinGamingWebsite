@@ -23,14 +23,15 @@ body {
     font-family: "Anton", sans-serif;
   }
 
-  
+/*top navigation*/
   .topnav {
     overflow: hidden;
     background-color: #333;
     z-index: 999;
     position: relative;
+    box-sizing: border-box;
   }
-  
+
   .topnav a {
     float: left;
     color: black;
@@ -38,15 +39,15 @@ body {
     padding: 10px 10px;
     text-decoration: none;
     font-size: 16px;
-    border: orange;
+
   }
-  
+
   .topnav a:hover {
     transition: 1s;
     background-color: #ddd;
     color: black;
   }
-  
+ /*top navigation active page*/
   .topnav a.active {
     background-color: orange;
     color: white;
