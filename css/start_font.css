@@ -13,33 +13,16 @@ Noah George
     top: 40%;
     left: 50%;
     text-align: center;
-    /* bring your own prefixes */
+    /* Fixes zoom by default */
     transform: translate(-50%, -50%)
   }
 
-.center_button
+.anton-regular
 {
-    z-index: 10;
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%)
-  }
-
-.title
-  {
-    font-size: 150%;
-  }
-
-  .anton-regular
-   {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .title img {
     width: fit-content;
@@ -47,7 +30,7 @@ Noah George
     margin: none;
 }
 
-.main_logo
+.logo_box
 {
   box-sizing: border-box;
   padding: 20px;
